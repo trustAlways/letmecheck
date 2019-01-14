@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rr_doctore_lawyer_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mrg2"
+                    android:layout_marginLeft="@dimen/mrg2"
+                    android:layout_marginRight="@dimen/mrg2"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rr_img_productimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/x_et_bg"
+                        >
+
+                        <ImageView
+                            android:id="@+id/doctor_lawyer_pic"
+                            android:layout_width="@dimen/size5"
+                            android:layout_height="@dimen/size5"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/image_border"
+                            android:src="@drawable/profile_placeholder" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/rr_professionaldetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/doctor_lawyer_pic"
+                            android:layout_centerVertical="true"
+                            android:visibility="visible">
+
+
+                            <TextView
+                                    android:id="@+id/doctore_or_lawyer_name"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="@dimen/mrg3"
+                                    android:text="Dr. Mashoor Gulati"
+                                   android:padding="@dimen/mrg1"
+                                   android:textColor="@color/txt_colr_blue"
+                                   android:textSize="@dimen/mrg5"></TextView>
+
+                            <TextView
+                                android:id="@+id/doctor_lawyer_specilization"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/mrg4"
+                                android:text="Doctor Specialization 1"
+                                android:layout_below="@+id/doctore_or_lawyer_name"
+                                android:textSize="@dimen/mrg4"
+                                android:textColor="@color/txt_colr_blue"
+                                ></TextView>
+
+                           <TextView
+                                android:id="@+id/lawyer_doctore_degrees"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/mrg4"
+                                android:text="MBBS, SD"
+                                android:textColor="@color/txt_colr_blue"
+
+                                android:layout_below="@+id/doctor_lawyer_specilization"
+                                android:textSize="@dimen/mrg4"></TextView>
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+          <!--Doctor details -->
+                <RelativeLayout
+                        android:id="@+id/rr_booking_details"
+                        android:layout_below="@+id/rr_img_productimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/x_et_bg"
+                        android:layout_marginTop="@dimen/mrg2">
+
+                        <!--111 THHHHH VIEWWW-->
+
+
+
+                          <RelativeLayout
+                              android:id="@+id/rr_first_add_view"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:padding="@dimen/mrg2">
+
+                              <ImageView
+                                  android:id="@+id/icon_1"
+                                  android:layout_width="@dimen/mrg5"
+                                  android:layout_height="@dimen/mrg5"
+                                  android:layout_alignParentLeft="true"
+                                  android:src="@drawable/location_new_icon"/>
+
+
+                              <TextView
+                                  android:id="@+id/address_hint"
+                                  android:layout_width="@dimen/size44"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:text="Address :"
+                                  android:layout_toRightOf="@+id/icon_1"
+                                  android:textSize="@dimen/mrg4"
+                                  android:layout_marginLeft="@dimen/mrg1"
+                                  android:textColor="@color/black"
+                                  ></TextView>
+
+                              <TextView
+                                  android:layout_toRightOf="@+id/address_hint"
+                                  android:id="@+id/txt_address"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:text="233, agrawal sweetsvijay nagar,indore,452001"
+                                  android:gravity="right"
+                                  android:textColor="@color/black_grey"
+                                  android:textSize="@dimen/mrg4"></TextView>
+
+
+
+                          </RelativeLayout>
+                            <!--22 THHHHH VIEWWW-->
+
+                    <RelativeLayout
+                        android:id="@+id/rr_second_DoA_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rr_first_add_view"
+                        android:padding="@dimen/mrg2">
+
+                        <ImageView
+                            android:id="@+id/icon_2"
+                            android:layout_width="@dimen/mrg5"
+                            android:layout_height="@dimen/mrg5"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/location_new_icon"/>
+
+
+                        <TextView
+                            android:id="@+id/date_of_appointment_hint"
+                            android:layout_width="@dimen/size8"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Date of appointment :"
+                            android:layout_toRightOf="@+id/icon_2"
+                            android:textSize="@dimen/mrg4"
+                            android:layout_marginLeft="@dimen/mrg1"
+                            android:textColor="@color/black"
+                            ></TextView>
+
+                        <TextView
+                            android:id="@+id/txt_date_of_appointment"
+                            android:layout_toRightOf="@+id/date_of_appointment_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Choose date"
+                            android:background="#a3aaab"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black_grey"
+                            android:textSize="@dimen/mrg4"></TextView>
+
+                        <CalendarView
+                            android:id="@+id/calendar_view"
+                            android:layout_below="@+id/txt_date_of_appointment"
+                            android:layout_width="200dp"
+                            android:layout_alignParentRight="true"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content"></CalendarView>
+
+                    </RelativeLayout>
+
+                    <!--333 THHHHH VIEWWW-->
+                    <RelativeLayout
+                        android:id="@+id/rr_third_DoA_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rr_second_DoA_view"
+                        android:padding="@dimen/mrg2"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/icon_3"
+                            android:layout_width="@dimen/mrg5"
+                            android:layout_height="@dimen/mrg5"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/location_new_icon"/>
+
+
+                        <TextView
+                            android:id="@+id/choosed_session_hint"
+                            android:layout_width="@dimen/size8"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Session :"
+                            android:layout_toRightOf="@+id/icon_3"
+                            android:textSize="@dimen/mrg4"
+                            android:layout_marginLeft="@dimen/mrg1"
+                            android:textColor="@color/black"
+                            ></TextView>
+
+                        <TextView
+                            android:id="@+id/txt_session"
+                            android:layout_toRightOf="@+id/choosed_session_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:hint="Select Session"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black_grey"
+                            android:textSize="@dimen/mrg4"></TextView>
+
+                    </RelativeLayout>
+                    <!--444 THHHHH VIEWWW-->
+
+                    <RelativeLayout
+                        android:id="@+id/rr_fourth_DoA_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rr_third_DoA_view"
+                        android:padding="@dimen/mrg2"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/icon_4"
+                            android:layout_width="@dimen/mrg5"
+                            android:layout_height="@dimen/mrg5"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/location_new_icon"/>
+
+
+                        <TextView
+                            android:id="@+id/session_time_hint"
+                            android:layout_width="@dimen/size8"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Time of Appointment :"
+                            android:layout_toRightOf="@+id/icon_4"
+                            android:textSize="@dimen/mrg4"
+                            android:layout_marginLeft="@dimen/mrg1"
+                            android:textColor="@color/black"
+                            ></TextView>
+
+                        <TextView
+                            android:id="@+id/txt_time_of_appointment"
+                            android:layout_toRightOf="@+id/session_time_hint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="2:45 PM"
+                            android:paddingLeft="2dp"
+                            android:textColor="@color/black_grey"
+                            android:textSize="@dimen/mrg4"></TextView>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+              <!--complete booking detail-->
+
+              <!--selecte session view-->
+                <RelativeLayout
+                    android:id="@+id/rr_session_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mrg2"
+                    android:layout_below="@+id/rr_booking_details"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tabs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:tabGravity="fill"
+                            app:tabMode="fixed"
+                            app:tabIndicatorColor="@color/red"
+                            android:background="@color/colorPrimary"
+
+                            />
+
+                        <FrameLayout
+                            android:id="@+id/frame_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mrg1"
+                            android:background="@drawable/x_et_bg"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/session_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="Session from to"
+                                android:padding="5dp"
+                                android:layout_gravity="center_horizontal"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/mrg4"></TextView>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/session_one_recyclerview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"
+                                android:padding="@dimen/mrg1"
+                                android:layout_marginTop="@dimen/mrg7"
+
+                                >
+                            </android.support.v7.widget.RecyclerView>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/session_two_recyclerview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_marginTop="@dimen/mrg7"
+
+                                android:padding="@dimen/mrg1">
+                            </android.support.v7.widget.RecyclerView>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/session_three_recyclerview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:layout_marginTop="@dimen/mrg7"
+
+                                android:padding="@dimen/mrg1">
+                            </android.support.v7.widget.RecyclerView>
+
+
+                        </FrameLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/mrg2">
+
+                            <ImageView
+                                android:id="@+id/erer"
+                                android:layout_width="@dimen/mrg5"
+                                android:layout_height="@dimen/mrg5"
+                                android:layout_alignParentLeft="true"
+                                android:background="@drawable/rectangular_corner_blue"/>
+
+
+                            <TextView
+                                android:id="@+id/rttt"
+                                android:layout_width="@dimen/size44"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Available"
+                                android:layout_toRightOf="@+id/erer"
+                                android:textSize="@dimen/mrg4"
+                                android:layout_marginLeft="@dimen/mrg1"
+                                android:textColor="@color/black"
+                                ></TextView>
+
+
+
+                            <ImageView
+                                android:id="@+id/ret"
+                                android:layout_width="@dimen/mrg5"
+                                android:layout_height="@dimen/mrg5"
+                                android:layout_toRightOf="@+id/rttt"
+                                android:background="@drawable/rectangular_corner_red"/>
+
+
+                            <TextView
+                                android:id="@+id/ttt"
+                                android:layout_toRightOf="@+id/ret"
+                                android:layout_width="@dimen/size44"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Selected"
+                                android:textSize="@dimen/mrg4"
+                                android:layout_marginLeft="@dimen/mrg1"
+                                android:textColor="@color/black"></TextView>
+
+                            <ImageView
+                                android:id="@+id/rertt"
+                                android:layout_width="@dimen/mrg5"
+                                android:layout_height="@dimen/mrg5"
+                                android:layout_toRightOf="@+id/ttt"
+                                android:background="@drawable/rectangular_corner_gray"/>
+
+
+                            <TextView
+                                android:id="@+id/ttrtt"
+                                android:layout_toRightOf="@+id/rertt"
+                                android:layout_width="@dimen/size5"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:text="Not Available"
+                                android:textSize="@dimen/mrg4"
+                                android:layout_marginLeft="@dimen/mrg1"
+                                android:textColor="@color/black"></TextView>
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_proceed"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linear"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="@dimen/mrg2"
+                        android:text="Proceed"
+                        android:textColor="@color/white"
+                        android:background="@drawable/round_corner_blue"
+                        />
+
+                </RelativeLayout>
+
+                    <!--book appointment reason and enter otp-->
+               <RelativeLayout
+                   android:id="@+id/rr_appointment_for"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/rr_session_selection"
+                   android:layout_marginTop="@dimen/mrg2"
+                   android:visibility="gone">
+
+                   <TextView
+                       android:id="@+id/txt_for_appointment"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Appoinrment for :"
+                       android:paddingTop="@dimen/mrg2"
+                       android:paddingBottom="@dimen/mrg2"
+                       android:paddingRight="@dimen/mrg2"
+                       android:textSize="@dimen/txt_size_xlg"
+                       android:textColor="@color/txt_colr_blue"/>
+
+                   <android.support.v7.widget.RecyclerView
+                       android:id="@+id/appointment_for_recycle"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:visibility="visible"
+                       android:background="@drawable/x_et_bg"
+                       android:padding="@dimen/mrg2"
+                       android:layout_below="@+id/txt_for_appointment">
+                   </android.support.v7.widget.RecyclerView>
+
+
+
+               <RelativeLayout
+                       android:id="@+id/rr_OTP"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/appointment_for_recycle"
+                       android:layout_marginTop="@dimen/mrg2"
+                       android:visibility="gone">
+
+                   <TextView
+                       android:id="@+id/otp_show_view"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="Enter OTP :"
+                           android:paddingTop="@dimen/mrg2"
+                           android:paddingBottom="@dimen/mrg2"
+                           android:paddingRight="@dimen/mrg2"
+                           android:textSize="@dimen/txt_size_xlg"
+                           android:textColor="@color/txt_colr_blue"/>
+
+                   <TextView
+                       android:id="@+id/enter_otp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Enter OTP :"
+                       android:padding="@dimen/mrg2"
+                       android:layout_below="@+id/otp_show_view"
+                       android:layout_centerInParent="true"
+                       android:textSize="@dimen/txt_size_xlg"
+                       android:textColor="@color/txt_colr_blue"
+                       android:background="@drawable/x_et_bg"/>
+
+                   <TextView
+                       android:id="@+id/txt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/terns_condition"
+                       android:layout_below="@+id/enter_otp"
+                       android:layout_centerInParent="true"
+                       android:textSize="@dimen/txt_size_xlg"
+                       android:textColor="@color/black_grey"
+                      />
+
+
+                   <Button
+                       android:id="@+id/btn_book_appointment"
+                       android:layout_width="250dp"
+                       android:layout_height="50dp"
+                       android:text="Book Appointment"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/mrg4"
+                       android:layout_below="@+id/txt"
+                       android:layout_centerInParent="true"
+                       android:layout_marginTop="@dimen/mrg2"
+                       android:background="@drawable/bookappoint_blue_icon"/>
+
+                   </RelativeLayout>
+
+
+                   <Button
+                       android:id="@+id/btn_after_get_appointments"
+                       android:layout_width="170dp"
+                       android:layout_height="40dp"
+                       android:text="Proceed"
+                       android:textColor="@color/white"
+                       android:textSize="@dimen/mrg4"
+                       android:layout_below="@+id/rr_OTP"
+                       android:layout_centerInParent="true"
+                       android:layout_marginTop="@dimen/mrg2"
+                       android:background="@drawable/bookappoint_blue_icon"/>
+
+               </RelativeLayout>
+
+
+            </RelativeLayout>
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="20dp"
+             android:layout_below="@+id/rr_doctore_lawyer_view">
+
+         </LinearLayout>
+
+
+    </RelativeLayout>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/progreess_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+
+    </FrameLayout>
+</RelativeLayout>

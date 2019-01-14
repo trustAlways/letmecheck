@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">KindlyCheckApp</string>
+    <string name="title">Title</string>
+    <string name="dashboard">Home</string>
+    <string name="logout">Logout</string>
+    <string name="my_appointment">My Appointment</string>
+
+    <string name="search_tag">Search Doctor,Lawyer or Business</string>
+    <string name="check">Check</string>
+    <string name="submit">Submit</string>
+    <string name="no">No</string>
+    <string name="sort_by">Sort By</string>
+    <string name="award_nd_recognition">Awards &amp; Recognition</string>
+    <string name="membership_nd_association">Memberships &amp; Association</string>
+    <string name="education_nd_proifessionalqualificaqtion">Education &amp; Professional Qualification</string>
+    <string name="verification">Verifications</string>
+    <string name="gallery">Gallery</string>
+    <string name="social_connect">Social Connects</string>
+
+    <string name="load_more">Load More</string>
+    <string name="hide">Hide</string>
+    <string name="company_branches">Company Branches</string>
+    <string name="managemnt_details">Management Details</string>
+    <string name="company_info">Company Information</string>
+
+    <string name="your_name">Your Name</string>
+    <string name="your_mobile_number">Your Mobile Number</string>
+
+    <string name="your_emailid_optional">Your Email ID(optional)</string>
+    <string name="your_emailid">Your Email ID</string>
+
+    <string name="service_interested">Service Interested in</string>
+    <string name="more">More...</string>
+
+
+    <string name="term_condition">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
+<string name="rate_ur_experience">Please rate your experience</string>
+    <string name="write_ur_genuine_reviews">Write your Genuine Review</string>
+    <string name="review_guidelines">Review Guidelines</string>
+    <string name="why_ur_writing_revies">Why are you writing this review?</string>
+<string name="select_question">Select Question</string>
+    <string name="wnt_recommended_this">Do you want recommended this ?</string>
+    <string name="select">Select</string>
+<string name="submit_ur_reviews">Submit Your Review</string>
+    <string name="write_a_review">Write a review</string>
+    <string name="mobile_emailid">Mobile Number/Email ID</string>
+    <string name="password">Password</string>
+<string name="login">Login</string>
+    <string name="signup">Signup</string>
+
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="or_connect_with">OR CONNECT WITH</string>
+
+    <string name="connect_with_fb">Connect With Facebook</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="country_code">Country Code</string>
+<string name="countrycode_name">+91 IND</string>
+<string name="terns_condition">Terms and Conditions</string>
+
+<string name="forgot_passwordd">Forgot Password</string>
+    <string name="password_strength_caption">Password Strength: {0}</string>
+    <string name="password_strength_weak">Weak</string>
+    <string name="password_strength_medium">Medium</string>
+    <string name="password_strength_strong">Strong</string>
+    <string name="password_strength_very_strong">Very Strong</string>
+    <string name="gallery_no_txt">No gallery pictures are available for this profile.</string>
+</resources>

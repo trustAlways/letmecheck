@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/rr_first_descp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <RelativeLayout
+        android:id="@+id/rr_awrd_recognization_descp_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/x_et_bg"
+        android:padding="5dp"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/rr_awrd_recognization_descp1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mrg2"
+
+            >
+
+
+            <ImageView
+                android:id="@+id/img_awrd_recognization_descp1"
+                android:layout_width="@dimen/mrg4"
+                android:layout_height="@dimen/mrg4"
+                android:background="@drawable/location_new_icon"
+
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/mrg1"/>
+            <TextView
+                android:id="@+id/txt_companybranch_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_awrd_recognization_descp1"
+android:hint="@string/your_name"
+                android:textSize="@dimen/mrg4"
+                android:layout_marginLeft="@dimen/mrg2"
+
+
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rr_awrd_recognization_descp2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mrg2"
+
+            android:layout_below="@+id/rr_awrd_recognization_descp1"
+
+            >
+
+
+
+            <ImageView
+                android:id="@+id/img_awrd_recognization_descp2"
+                android:layout_width="@dimen/mrg4"
+                android:layout_height="@dimen/mrg4"
+                android:background="@drawable/location_new_icon"
+                android:layout_marginLeft="@dimen/mrg1"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/txt_companybranch_address2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_awrd_recognization_descp2"
+android:layout_marginLeft="@dimen/mrg2"
+                android:textSize="@dimen/mrg4"
+
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rr_awrd_recognization_descp3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mrg2"
+
+            android:layout_below="@+id/rr_awrd_recognization_descp2"
+
+            >
+
+                <ImageView
+                    android:id="@+id/img_awrd_recognization_descp3"
+                    android:layout_width="@dimen/mrg4"
+                    android:layout_height="@dimen/mrg4"
+                    android:background="@drawable/mobile_new_icon"
+
+                    android:layout_marginLeft="@dimen/mrg1"
+                    android:layout_centerVertical="true"    />
+
+                <TextView
+                    android:id="@+id/txt_companybranch_mobilenumber2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+android:layout_marginLeft="@dimen/mrg2"
+                    android:layout_toRightOf="@+id/img_awrd_recognization_descp3"
+                    android:textSize="@dimen/mrg4"
+
+                    />
+            </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

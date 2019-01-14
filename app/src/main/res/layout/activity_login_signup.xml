@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/white"
+    android:layout_alignParentLeft="true"
+    >
+
+
+
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="@color/white"
+            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/rr_logo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rr_img_productimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size13"
+                    android:background="@drawable/x_et_bg"
+                    android:elevation="5dp"
+                    >
+                    <ImageView
+                        android:id="@+id/img_productimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/logo"
+                        ></ImageView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/ll_showdata"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size4"
+                android:layout_below="@+id/rr_logo"
+                android:layout_weight=".17"
+                android:layout_marginTop="@dimen/mrg2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:id="@+id/ll_professionaldetails"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        android:background="@drawable/white_bg"
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_professionaldetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:background="@color/white"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:text="Login"
+                            android:textColor="@color/txt_colr_blue"
+                            android:textSize="16dp"
+                            android:visibility="visible" />
+
+                        <View
+                            android:id="@+id/v_professionaldetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="@color/Red"
+                            android:visibility="visible" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_userrewies"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:orientation="vertical"
+                        android:background="@drawable/grey_bg"
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_userrewies"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:background="@color/white"
+                            android:elevation="5dp"
+                            android:gravity="center"
+                            android:paddingLeft="2dp"
+                            android:text="SignUp"
+                            android:textColor="@color/gray"
+                            android:textSize="16dp"
+                            android:visibility="visible" />
+
+                        <View
+                            android:id="@+id/v_userrewies"
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:background="@color/Red"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rr_signup"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_showdata"
+                android:layout_marginTop="@dimen/mrg2"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rr_signup_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size4"
+                    android:layout_marginLeft="@dimen/size0"
+                    android:layout_marginRight="@dimen/size0"
+                    >
+
+                    <EditText
+                        android:id="@+id/edt_signup_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/mrg2"
+                        android:background="@drawable/rectangle_corner_blackk"
+                        android:hint="@string/name"
+                        android:inputType="textCapWords|textNoSuggestions"
+                        android:paddingLeft="@dimen/mrg2"
+                        />
+                    <TextView
+                        android:id="@+id/txt_signup_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Red"
+                        android:layout_below="@+id/edt_signup_name"
+                        android:layout_marginTop="@dimen/mrg1"
+                        android:paddingLeft="@dimen/mrg2"
+
+                        android:text="This field is required"
+                        android:visibility="gone"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rr_signup_emailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size4"
+                    android:layout_marginLeft="@dimen/size0"
+                    android:layout_marginRight="@dimen/size0"
+                    android:layout_below="@+id/rr_signup_name"
+
+                  >
+
+                    <EditText
+                        android:id="@+id/edt_signup_emailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/mrg2"
+                        android:background="@drawable/rectangle_corner_blackk"
+                        android:hint="@string/email"
+                        android:paddingLeft="@dimen/mrg2"
+                        android:inputType="textEmailAddress"
+                        />
+                    <TextView
+                        android:id="@+id/txt_signup_emailid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Red"
+                        android:layout_below="@+id/edt_signup_emailid"
+                        android:layout_marginTop="@dimen/mrg1"
+                        android:paddingLeft="@dimen/mrg2"
+
+                        android:text="This field is required"
+                        android:visibility="gone"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rr_signup_mobilenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size4"
+                    android:layout_marginLeft="@dimen/size0"
+                    android:layout_marginRight="@dimen/size0"
+android:layout_below="@+id/rr_signup_emailid"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/rr_country_name_mobilename"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                       >
+
+                        <Spinner
+                            android:id="@+id/spn_country_name"
+                            android:layout_width="@dimen/size66"
+                            android:layout_height="38dp"
+                            android:layout_marginTop="@dimen/mrg2"
+                            android:prompt="@string/country_code"
+                            ></Spinner>
+
+                    <EditText
+                        android:id="@+id/edt_signup_mobilenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_toRightOf="@+id/spn_country_name"
+                        android:layout_marginLeft="@dimen/mrg2"
+                        android:layout_marginTop="@dimen/mrg2"
+                        android:background="@drawable/rectangle_corner_blackk"
+                        android:hint="@string/mobile_number"
+                        android:paddingLeft="@dimen/mrg2"
+                        android:maxLength="10"
+                        android:inputType="number"
+                        />
+
+                        <TextView
+                            android:id="@+id/txt_signup_mobilenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/Red"
+                            android:layout_toRightOf="@+id/spn_country_name"
+
+                            android:layout_below="@+id/edt_signup_mobilenumber"
+                            android:layout_marginTop="@dimen/mrg1"
+                            android:paddingLeft="@dimen/mrg2"
+
+                            android:text="This field is required"
+                            android:visibility="gone"
+                            />
+
+                    </RelativeLayout>
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rr_signup_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size4"
+                    android:layout_marginLeft="@dimen/size0"
+                    android:layout_marginRight="@dimen/size0"
+                    android:layout_below="@+id/rr_signup_mobilenumber"
+                    >
+
+                    <EditText
+                        android:id="@+id/edt_signup_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="38dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/mrg2"
+                        android:background="@drawable/rectangle_corner_blackk"
+                        android:hint="@string/password"
+                        android:paddingLeft="@dimen/mrg2"
+                        android:inputType="textPassword"
+                        />
+                    <TextView
+                        android:id="@+id/txt_signup_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Red"
+                        android:layout_below="@+id/edt_signup_password"
+                        android:layout_marginTop="@dimen/mrg1"
+                        android:paddingLeft="@dimen/mrg2"
+
+                        android:text="This field is required"
+                        android:visibility="gone"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rr_seekbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size0"
+                    android:layout_marginRight="@dimen/size0"
+                    android:layout_marginTop="@dimen/mrg1"
+                    android:layout_below="@+id/rr_signup_password"
+
+
+                    >
+
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+android:progressDrawable="@drawable/custom_progressbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/size2"
+                            android:indeterminate="false"
+                            android:maxHeight="40dip"
+                            android:minHeight="40dip"
+                            android:progress="0"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/mrg2"
+                            android:textColor="@color/white"
+
+                            android:text="Weak"
+                            android:id="@+id/password_strength" />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rr_termsandcondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size33"
+                    android:layout_marginLeft="@dimen/size0"
+                    android:layout_marginRight="@dimen/size0"
+                    android:layout_marginTop="@dimen/mrg1"
+                    android:layout_below="@+id/rr_seekbar"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/rr_chk_termscondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size2">
+
+                    <CheckBox
+                        android:id="@+id/chk_termscondition"
+                        android:layout_width="@dimen/size2"
+                        android:layout_height="@dimen/size2" />
+
+                        <TextView
+                            android:id="@+id/txt_termscondition"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+android:layout_toRightOf="@+id/chk_termscondition"
+                            android:layout_centerVertical="true"
+                            android:text="@string/terns_condition"
+                            />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_termscondition_error"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/Red"
+                        android:layout_below="@+id/rr_chk_termscondition"
+                        android:paddingLeft="@dimen/mrg2"
+android:layout_marginTop="@dimen/mrg1"
+                        android:text="This field is required"
+                        android:visibility="gone"
+                        />
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rr_signup_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size4"
+                    android:layout_marginLeft="@dimen/size0"
+                    android:layout_marginRight="@dimen/size0"
+                    android:layout_below="@+id/rr_termsandcondition"
+
+                    >
+
+                    <Button
+                        android:id="@+id/btn_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/size3"
+                        android:background="@color/colorPrimaryDark"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/mrg2"
+                        android:text="@string/signup"
+                        android:textColor="@color/white"
+                        />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:id="@+id/rr_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_showdata"
+            android:layout_marginTop="@dimen/mrg2"
+            android:visibility="visible">
+
+
+    <RelativeLayout
+        android:id="@+id/rr_login_mobile_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size4"
+        android:layout_marginLeft="@dimen/size0"
+        android:layout_marginRight="@dimen/size0">
+
+        <EditText
+            android:id="@+id/edt_login_mobile_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mrg2"
+            android:background="@drawable/rectangle_corner_blackk"
+            android:hint="@string/mobile_emailid"
+            android:paddingLeft="@dimen/mrg2"
+            android:inputType="textEmailAddress"
+            />
+<TextView
+    android:id="@+id/txt_login_mobile_phonenumber"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/Red"
+    android:layout_below="@+id/edt_login_mobile_phonenumber"
+    android:layout_marginTop="@dimen/mrg1"
+    android:paddingLeft="@dimen/mrg2"
+
+    android:text="This field is required"
+    android:visibility="gone"
+    />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rr_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size4"
+        android:layout_marginLeft="@dimen/size0"
+        android:layout_marginRight="@dimen/size0"
+        android:layout_below="@+id/rr_login_mobile_phonenumber"
+        >
+
+        <EditText
+            android:id="@+id/edt_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mrg2"
+            android:background="@drawable/rectangle_corner_blackk"
+            android:hint="@string/password"
+            android:paddingLeft="@dimen/mrg2"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:id="@+id/txt_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/Red"
+            android:layout_below="@+id/edt_login_password"
+            android:layout_marginTop="@dimen/mrg1"
+            android:paddingLeft="@dimen/mrg2"
+
+            android:text="This field is required"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rr_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size4"
+        android:layout_marginLeft="@dimen/size0"
+        android:layout_marginRight="@dimen/size0"
+        android:layout_below="@+id/rr_login_password"
+        >
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size3"
+            android:background="@color/colorPrimaryDark"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/mrg2"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rr_forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size1"
+        android:layout_marginLeft="@dimen/size0"
+        android:layout_marginRight="@dimen/size0"
+        android:layout_below="@+id/rr_login_btn"
+
+        >
+
+        <TextView
+            android:id="@+id/txt_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_password"
+            android:textColor="@color/txt_colr_blue"
+
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rr_orconnect_with"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size2"
+        android:layout_marginLeft="@dimen/size0"
+        android:layout_marginRight="@dimen/size0"
+        android:layout_below="@+id/rr_forgot_password"
+
+        >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/txt_orconnect_with"
+            android:background="@color/black"
+            android:layout_marginRight="@dimen/mrg1"
+            />
+
+        <TextView
+            android:id="@+id/txt_orconnect_with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or_connect_with"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/txt_orconnect_with"
+            android:background="@color/black"
+            android:layout_marginLeft="@dimen/mrg1"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rr_connectwith_fb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size3"
+        android:layout_marginLeft="@dimen/size0"
+        android:layout_marginRight="@dimen/size0"
+        android:layout_marginTop="@dimen/size0"
+        android:layout_below="@+id/rr_orconnect_with"
+        android:background="#3B5998"
+        >
+
+        <ImageView
+            android:id="@+id/img_fb"
+            android:layout_width="@dimen/size1"
+            android:layout_height="@dimen/size1"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/txt_conn_with_fb"
+            android:layout_marginRight="@dimen/mrg1"
+            android:background="@drawable/facebook"
+         />
+
+        <TextView
+            android:id="@+id/txt_conn_with_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/connect_with_fb"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+</RelativeLayout>
+
+</ScrollView>
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="@dimen/size4"
+        android:layout_height="@dimen/size4"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/relativeLayout">
+
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/pager"
+        android:layout_margin="@dimen/mrg1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+    <ProgressBar
+        android:id="@+id/progress1"
+        android:layout_width="@dimen/size4"
+        android:layout_height="@dimen/size4"
+android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

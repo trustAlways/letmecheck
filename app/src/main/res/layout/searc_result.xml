@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/rr_first_descp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cuisineslistitem"
+            android:padding="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"/>
+        <ImageView
+           android:id="@+id/img_icon"
+            android:layout_width="@dimen/size0"
+            android:layout_height="@dimen/size0"
+            android:layout_gravity="right|center"
+            android:layout_marginRight="@dimen/mrg2"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"
+            />
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

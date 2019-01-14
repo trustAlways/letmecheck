@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            <RelativeLayout
+                android:id="@+id/rr_logo"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rr_img_productimg"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size19"
+                    android:background="@drawable/x_et_bg"
+                    android:elevation="5dp"
+                    >
+                    <ImageView
+                        android:id="@+id/img_productimg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/logo"
+                        ></ImageView>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+<RelativeLayout
+    android:id="@+id/frme_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rr_logo"
+    android:layout_marginTop="@dimen/size0">
+
+                <LinearLayout
+                    android:id="@+id/rr_current_place"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size3"
+                    android:weightSum="1"
+                    android:elevation="@dimen/mrg1"
+                    android:background="@drawable/x_et_bg"
+                    android:layout_marginLeft="@dimen/mrg2"
+                    android:layout_marginRight="@dimen/mrg2"
+                    android:layout_marginTop="@dimen/mrg2"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".15"
+                        android:src="@drawable/location_icon"
+                        android:padding="5dp"
+                        android:layout_gravity="center"
+                        />
+
+                    <EditText
+                        android:id="@+id/autoCompleteTextView1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".8"
+                        android:layout_marginLeft="@dimen/mrg2"
+                        android:background="@drawable/x_et_reg_log_bg"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:inputType="textNoSuggestions|textCapWords"
+                        android:text="Pune"
+                        android:focusable="false"
+                        android:textColor="@color/black"
+                        />
+
+
+                </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rr_InboxDetailRVv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="@dimen/mrg1"
+        android:visibility="gone"
+        android:layout_below="@+id/rr_current_place"
+
+        >
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/InboxDetailRVv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:alwaysDrawnWithCache="true"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            />
+
+        <ProgressBar
+            android:id="@+id/progresss"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/rr_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size3"
+
+                    android:weightSum="1"
+                    android:elevation="@dimen/mrg1"
+                    android:background="@drawable/x_et_bg"
+                    android:layout_marginLeft="@dimen/mrg2"
+                    android:layout_marginRight="@dimen/mrg2"
+                    android:layout_marginTop="@dimen/mrg2"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/rr_InboxDetailRVv"
+
+                    >
+
+
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/edt_search"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+
+                        android:hint="@string/search_tag"
+                        android:background="@drawable/x_et_reg_log_bg"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:padding="@dimen/mrg2"
+                        android:inputType="textNoSuggestions|textCapWords"
+
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/no_search_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:text="No  search result at the moment."
+                    android:visibility="gone" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/rr_InboxDetailRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="@dimen/mrg1"
+                    android:layout_below="@+id/rr_search"
+                    android:visibility="gone"
+                    >
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/InboxDetailRV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:alwaysDrawnWithCache="true"
+                        android:clipToPadding="false"
+                        android:scrollbars="none"
+                        />
+
+                    <ProgressBar
+                        android:id="@+id/progress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:visibility="gone"/>
+                </RelativeLayout>
+
+</RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/mrg2"
+                    android:gravity="center"
+                    android:layout_below="@+id/frme_lay"
+                    >
+
+                    <Button
+                        android:id="@+id/bt_reg_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="70dp"
+                        android:background="@color/colorPrimary"
+                        android:text="@string/check"
+                        android:textColor="@color/black"
+                        />
+
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mrg2"
+                android:layout_marginTop="@dimen/mrg2"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                >
+            </LinearLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </FrameLayout>
+</RelativeLayout>

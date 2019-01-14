@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardlist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    card_view:cardBackgroundColor="@android:color/black"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="5dp">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rr_led_Descp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/x_et_bg"
+            android:elevation="5dp"
+            >
+            <RelativeLayout
+                android:id="@+id/rr_first_descp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mrg1"
+                >
+
+                <RelativeLayout
+
+                    android:id="@+id/rr_ratingreview"
+                    android:layout_width="@dimen/size14"
+                    android:layout_height="@dimen/size5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/mrg1"
+                    android:layout_marginTop="@dimen/mrg2"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rr_txt_rating"
+                        android:layout_width="@dimen/size2"
+                        android:layout_height="@dimen/size2"
+                        android:layout_centerHorizontal="true"
+
+                        >
+
+                        <ImageView
+                            android:id="@+id/img_userratingreview"
+                            android:layout_width="@dimen/size3"
+                            android:layout_height="@dimen/size3"
+
+                            android:background="@drawable/circle_icon" />
+
+                        <TextView
+                            android:id="@+id/txt_num_ratng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="R"
+                           />
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_user_name_for_Review_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size0"
+                        android:layout_below="@+id/rr_txt_rating"
+android:layout_marginTop="@dimen/mrg1"
+                        android:layout_centerHorizontal="true"
+                        android:text="RashmiOne"
+                        android:textColor="@color/txt_colr_blue" />
+
+
+
+                    <TextView
+                        android:id="@+id/txt_userreviews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size2"
+                        android:layout_below="@+id/txt_user_name_for_Review_rating"
+                        android:text="rash******@gmail.com"
+                        android:layout_marginTop="@dimen/mrg1"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/mrg3" />
+
+                </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/rr_txt_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/mrg1"
+
+                        android:layout_toRightOf="@+id/rr_ratingreview"
+                        >
+
+                        <RelativeLayout
+                            android:id="@+id/rr_proname"
+                            android:layout_width="@dimen/size8"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginTop="@dimen/mrg2"
+                            >
+                            <RatingBar
+                                android:id="@+id/rb_adpshop_ratingg"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:isIndicator="true"
+                                android:numStars="5"
+                                android:rating="2.5"
+
+                                android:stepSize="0.1"
+                                android:theme="@style/RatingBar" />
+
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/rr_products_prize"
+                            android:layout_marginTop="@dimen/mrg1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rr_proname"
+                            >
+
+                            <RelativeLayout
+                                android:id="@+id/rr_txt_user_review_and_more"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="@dimen/mrg2"
+                                >
+                            <TextView
+                                android:id="@+id/txt_user_review"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/mrg3"
+                                android:maxLines="2"
+                                android:text="@string/term_condition"
+                                android:visibility="visible"
+
+                                />
+
+
+                            <TextView
+                                android:id="@+id/txt_user_review_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/mrg3"
+                                android:text="@string/term_condition"
+                                android:visibility="gone"
+                                />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txt_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_below="@+id/rr_txt_user_review_and_more"
+                                android:text="@string/more"
+                                android:textColor="@color/txt_colr_blue"
+                                />
+
+                            <TextView
+                                android:id="@+id/txt_hide"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_below="@+id/rr_txt_user_review_and_more"
+                                android:text="@string/hide"
+
+                                android:visibility="gone"
+                                android:textColor="@color/txt_colr_blue"
+                                />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+</android.support.v7.widget.CardView>

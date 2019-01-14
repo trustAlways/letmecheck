@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+            <TextView
+                android:id="@+id/txt_avail_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="@dimen/mrg2"
+
+                android:layout_marginLeft="@dimen/mrg2"
+                android:visibility="gone"
+                />
+            <RelativeLayout
+                android:id="@+id/rr_edt_search_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size2"
+                android:weightSum="1"
+                android:elevation="@dimen/mrg1"
+                android:layout_below="@+id/txt_avail_pro"
+                android:background="@drawable/x_et_bg"
+android:layout_marginLeft="@dimen/mrg2"
+                android:layout_marginRight="@dimen/mrg2"
+                android:layout_marginTop="@dimen/mrg1"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rr_ascending_decending"
+                    android:layout_width="@dimen/size0"
+                    android:layout_height="@dimen/size0"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/mrg2"
+
+                    >
+                <ImageView
+                    android:id="@+id/img_search"
+                    android:layout_width="@dimen/size0"
+                    android:layout_height="@dimen/size0"
+                    android:background="@drawable/sort_by_icon"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_search_ascending"
+                    android:layout_width="@dimen/size0"
+                    android:layout_height="@dimen/size0"
+                    android:background="@drawable/increasing_icon"
+                    android:visibility="gone"
+
+                    />
+
+                </RelativeLayout>
+                <EditText
+                    android:id="@+id/edt_search_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="@string/sort_by"
+                    android:layout_toRightOf="@+id/rr_ascending_decending"
+
+                    android:layout_marginLeft="@dimen/mrg4"
+                    android:textSize="@dimen/mrg3"
+                    android:focusable="false"
+                    android:background="@android:color/transparent"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rr_InboxDetailRV"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="@dimen/mrg2"
+                android:layout_below="@+id/rr_edt_search_bar"
+                >
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/InboxDetailRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:alwaysDrawnWithCache="true"
+                    android:clipToPadding="false"
+
+                    android:scrollbars="none"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_btn_load_more"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/mrg4"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_below="@+id/rr_InboxDetailRV"
+                android:layout_marginBottom="@dimen/mrg2"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_add_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:background="#d94040"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mrg2"
+                android:layout_below="@+id/ll_btn_load_more"
+                android:layout_marginTop="@dimen/mrg1"
+                ></LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
